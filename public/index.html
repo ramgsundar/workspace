@@ -56,7 +56,73 @@
         <form>
            <label for ="name">Full Name</label>
            <input type="text" id="name" placeholder="Enter your name" required>
-           
+           <!-- Field 2: Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"
+           placeholder="you@example.com" required>
+    <br><br>
+
+    <!-- Field 3: Phone -->
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone"
+           placeholder="123-456-7890" required>
+    <br><br>
+
+    <!-- Field 4: Product Selection -->
+    <label for="product">Select Product:</label><br>
+    <select id="product" name="product" required>
+        <option value="" disabled selected>Choose a product</option>
+        <option value="P001">Laptop Pro 15 - $1299.99</option>
+        <option value="P002">Wireless Mouse - $29.99</option>
+        <option value="P003">4K Monitor - $499.99</option>
+        <option value="P004">Mechanical Keyboard - $89.99</option>
+    </select>
+    <br><br>
+
+    <!-- Field 5: Quantity -->
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="quantity"
+           min="1" max="50" value="1" required>
+    <br><br>
+
+    <!-- Field 6: Shipping Method -->
+    <label>Shipping Method:</label><br>
+    <input type="radio" id="standard" name="shipping" value="standard">
+    <label for="standard">Standard Shipping (5–7 days)</label><br>
+
+    <input type="radio" id="express" name="shipping" value="express">
+    <label for="express">Express Shipping (2–3 days)</label><br>
+
+    <input type="radio" id="overnight" name="shipping" value="overnight">
+    <label for="overnight">Overnight Shipping (1 day)</label>
+    <br><br>
+
+    <!-- Field 7: Additional Services -->
+    <label>Additional Services:</label><br>
+    <input type="checkbox" id="giftwrap" name="services" value="giftwrap">
+    <label for="giftwrap">Gift Wrapping (+$5)</label><br>
+
+    <input type="checkbox" id="warranty" name="services" value="warranty">
+    <label for="warranty">Extended Warranty (+$99)</label>
+    <br><br>
+
+    <!-- Field 8: Shipping Address -->
+    <label for="address">Shipping Address:</label><br>
+    <textarea id="address" name="address"
+              rows="4" cols="50"
+              placeholder="Enter your complete address"
+              required></textarea>
+    <br><br>
+
+    <!-- Field 9: Terms Agreement -->
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label>
+    <br><br>
+
+    <!-- Form Buttons -->
+    <input type="submit" value="Place Order">
+    <input type="reset" value="Clear Form">
+
 
 
         </form>
